@@ -106,6 +106,8 @@ color:#FFEE2E;
     height: 403px;
     left: 920px;
     top: 220px;
+    padding-left: 200px;
+    
 }
 
 .old-man{
@@ -114,7 +116,44 @@ color:#FFEE2E;
 
 .behind-text{
  margin: 50px;
+ text-align: left;
+ width: 50%;
+
 }
-.flower-right{
-    margin-right: -50px;
+.flower{
+    margin-right: -300px;
+}
+
+/*Cards*/
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    width: 86vw;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 33.333333%;
+    justify-content: center;
+    justify-self: center;
+}
+.card{
+    margin-left: 50px;
+    border: 1px solid  #FE9013;
+    border-radius: 1%;
+    
+}
+
+.card .rectangle{
+    width: 265px;
+    height: 266px;
+}
+.cardText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#cardsSection{
+    align-items: center;
+    align-items: center;
+    width: 80%;
 }
