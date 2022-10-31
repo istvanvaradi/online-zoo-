@@ -1,9 +1,120 @@
+
+*{
+
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Nav section  */
 nav{
     width: 100%;
-    background-color: black;
+    background-color: #000000;
     color:white;
-    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+  
 }
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+}
+.nav-elements{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#logo .bamboo{
+ margin-right: -10px;
+ z-index: 2;
+}
+
+#logo{
+border: 1px solid #FFFFFF;
+border-radius: 2px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 10px;
+}
+/* Nav section  */
+
+
 main{
-    width: 1600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 780px;
+    background-image: url(../../assets/Giant\ Panda.png);
+}
+#hero{
+  background: #FE9013;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  float: right;
+  margin-right: 270px;
+}
+.hero-text .main-button{
+    width: 298px;
+    height: 54px;
+    background-color: #FE9013;
+    color:#FFFFFF;
+    border-radius: 25px;
+    border: 0px;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+h1{
+width: 500px;
+ font-family: 'Roboto';
+font-weight: 700;
+font-size: 106.496px;
+line-height: 75%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+h1 .yellow{
+color:#FFEE2E;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+
+/*behind*/
+#behind{
+    display: flex;
+    flex-direction: row;
+    width: 1160px;
+    height: 403px;
+    left: 920px;
+    top: 220px;
+}
+
+.old-man{
+    margin: 50px;
+}
+
+.behind-text{
+ margin: 50px;
+}
+.flower-right{
+    margin-right: -50px;
 }
