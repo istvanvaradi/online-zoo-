@@ -1,1 +1,5 @@
-{}
+{
+     "[html]": {
+            "editor.defaultFormatter": "vscode.html-language-features"
+        },
+}

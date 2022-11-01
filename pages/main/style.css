@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 /* Nav section  */
@@ -226,4 +227,26 @@ h1 .yellow {
 #pickandfeed .innerBox {
   font-family: 'Roboto', sans-serif;
   line-height: 20px;
+}
+.howtoCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.howtoCards .howtoCard {
+  display: grid;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: start;
+  margin: 20px;
+}
+.imageRect {
+  background: #ffffff;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
