@@ -6,14 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Online Zoo</title>
+  <link 
+  rel="stylesheet"  type='text/css'>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,400&display=swap"
     rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cac068efe9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
   <script src="index.js"> </script>
 </head>
 <nav>
-  <div id="logo">
+  <div class="logo">
     <a>
       Petstory
       <br />
@@ -54,7 +57,7 @@
     <section id="behind">
       <img class="old-man" src="../../assets/bamboo-cap.png" alt="man in bamboo hat">
       <div class="behind-text">
-        <h2>The Backstage of the Wilderness World.</h2>
+        <h2>The Backstage of the  Wilderness World.</h2>
         <p>The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
         <h4>How it works </h4>
         <p>The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are
@@ -62,10 +65,12 @@
           alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.
         </p>
       </div>
+      
       <div>
       </div>
-      <img class="flower" src="../../assets//flower_foto1.png">
       </div>
+            <img class="flower" src="../../assets//flower_foto1.png">
+
 
     </section>
     <div id="cards">
@@ -255,14 +260,63 @@
               gouillas. Online zoo is one jf the ways to instill a love for animals.
             </p>
           </div>
-
         </div>
-        <progress></progress>
+        <progress id="progress" value="32" max="100">  </progress>
       </div>
-
       <button class="main-button">Leave feedback</button>
     </section>
+    
   </main>
+  <footer>
+    <div class="footer-up">
+ <div class="logo">
+    <a>
+      Petstory
+      <br />
+      <img class="bamboo" src="../../assets/bamboo.png" width="10px" />
+      Online
+    </a>
+  </div>
+  <div>
+    <h2>Subscribe to our news</h2>
+    <form action="">
+      <input type="email" placeholder="Enter your email" name="mail" id="email">
+      <button>Submit</button>
+    </form>
+  </div>
+    </div>
+    <button class="main-button">DONATE FOR VOLUNTEERS</button>
+    <div id="bottomFooter">
+    <div id="social">
+    <div class="iconPair">
+      <img color="white" class="social-media" src="../../assets/facebook (1).svg"alt="facebook">
+      <div> Facebook</div>
+    </div>
+    <div class="iconPair">
+      <img class="social-media" src="../../assets/facebook.svg" alt="facebook">
+      <div> Facebook</div>
+    </div>
+    <div class="iconPair">
+      <img class="social-media" src="../../assets/facebook.svg" alt="facebook">
+      <div> Facebook</div>
+    </div>
+    <div class="iconPair">
+      <img class="social-media" src="../../assets/5305154_fb_facebook_facebook logo_icon.png" alt="facebook">
+      <div> Facebook</div>
+    </div>
+   </div>
+   <div class="footer-links">
+    <a href="">About</a>
+    <a href="">Map</a>
+    <a href="">Zoos</a>
+    <a href="">Contact us</a>
+   </div>
+   <div>
+     <p>Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</p>
+   </div>
+   </div>
+
+  </footer>
 </body>
 
 </html>

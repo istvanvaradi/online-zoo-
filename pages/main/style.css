@@ -7,7 +7,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
-
+h2 {
+  font-weight: 100;
+}
 /* Nav section  */
 
 nav {
@@ -31,12 +33,12 @@ nav a {
   justify-content: space-evenly;
   align-items: center;
 }
-#logo .bamboo {
+.logo .bamboo {
   margin-right: -10px;
   z-index: 2;
 }
 
-#logo {
+.logo {
   border: 1px solid #ffffff;
   border-radius: 2px;
   margin-top: 10px;
@@ -53,7 +55,7 @@ main {
 header {
   width: 100%;
   height: 780px;
-  background-image: url(../../assets/Giant\Panda.png);
+  background-image: url(../../assets/GiantPanda.png);
 }
 #hero {
   background: #fe9013;
@@ -104,22 +106,49 @@ h1 .yellow {
   flex-direction: row;
   width: 1600px;
   height: 403px;
-  left: 920px;
-  top: 220px;
-  padding-left: 200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  color: rgba(51, 59, 65, 1);
 }
 
 .old-man {
-  margin: 50px;
+  width: 609px;
+  height: 403px;
+  margin-left: 219px;
+  margin-right: 20px;
 }
 
 .behind-text {
-  margin: 50px;
   text-align: left;
-  width: 50%;
+  width: 30%;
 }
 .flower {
-  margin-right: -300px;
+  position: absolute;
+  right: 0;
+  margin-right: -50px;
+}
+.behind-text h2 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 57.6pxpx;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.behind-text h4 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 37.6px;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+}
+
+.behind-text p {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*Cards*/
@@ -127,7 +156,7 @@ h1 .yellow {
 #cards {
   display: flex;
   flex-direction: row;
-  width: 70vw;
+  width: 90vw;
   align-items: center;
   flex-wrap: wrap;
   flex-basis: 33.333333%;
@@ -136,15 +165,15 @@ h1 .yellow {
   margin: auto;
 }
 .card {
-  margin-left: 50px;
   border: 1px solid #fe9013;
   border-radius: 1%;
   margin-top: 15px;
+  margin-right: 25px;
 }
 
 .card .rectangle {
-  width: 265px;
-  height: 266px;
+  width: 365px;
+  height: 366px;
 }
 .cardText {
   display: flex;
@@ -154,7 +183,7 @@ h1 .yellow {
 #cardsSection {
   align-items: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 .main-button {
   width: 298px;
@@ -275,4 +304,85 @@ h1 .yellow {
   position: flex;
   flex-direction: column;
   text-align: center;
+}
+
+/*footer */
+
+footer {
+  width: 1600px;
+  height: 600px;
+  background: rgba(17, 17, 21, 1);
+  margin-top: 200px;
+  color: #eaf7fe;
+}
+footer button {
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+footer .logo {
+  width: 100px;
+  color: #e0d8f0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 200px 40px 200px;
+}
+
+#email {
+  width: 228px;
+  height: 42px;
+  background-color: #000000;
+  border: #fe9013 1px solid;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+footer form button {
+  width: 129px;
+  height: 42px;
+  border-radius: 5px;
+  color: rgba(75, 146, 0, 1);
+  margin-left: 0;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: grey;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Roboto';
+  font-weight: 200;
+  background-color: #000000;
+  padding-left: 10px;
+}
+.iconPair {
+  display: flex;
+  flex-direction: row;
+}
+footer .social-media {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  color: green;
+}
+
+footer #social {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer #bottomFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
