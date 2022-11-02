@@ -259,12 +259,30 @@ h1 .yellow {
   background: rgba(253, 253, 255, 0.52);
   margin: 200px 70px 200px 70px;
   line-height: 120%;
+  text-align: center;
+  padding-top: 50px;
+}
+#pickandfeed .innerBox h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120px;
+  color: #fe9013;
 }
 
+#pickandfeed .innerBox .bigP {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+}
 #pickandfeed .innerBox {
   font-family: 'Roboto', sans-serif;
-  line-height: 20px;
+  line-height: 40px;
 }
+
 .howtoCards {
   display: flex;
   flex-direction: row;
@@ -278,6 +296,11 @@ h1 .yellow {
   justify-content: space-around;
   justify-items: start;
   margin: 20px;
+}
+.howtoCard p {
+  width: 80%;
+  line-height: normal;
+  text-align: left;
 }
 .imageRect {
   background: #ffffff;
