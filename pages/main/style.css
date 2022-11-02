@@ -470,7 +470,9 @@ footer #bottomFooter {
 #bottomFooter .footer-links {
   margin-right: 100px;
 }
-
+footer input {
+  color: #f1f3f2;
+}
 .main-button:hover {
   background-color: yellow;
 }
