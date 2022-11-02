@@ -461,3 +461,7 @@ a:hover {
   text-decoration: underline coral;
   color: #febdab;
 }
+
+.card:hover {
+  background-color: grey;
+}
