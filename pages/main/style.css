@@ -4,6 +4,7 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
@@ -127,7 +128,6 @@ h1 .yellow {
 .flower {
   position: absolute;
   right: 0;
-  margin-right: -50px;
 }
 .behind-text h2 {
   font-family: 'Roboto', sans-serif;
@@ -219,7 +219,7 @@ h1 .yellow {
 #pickandfeed {
   padding-top: 5%;
   padding-bottom: 5%;
-
+  width: 1600px;
   background: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -321,7 +321,9 @@ footer button {
 }
 
 footer .logo {
-  width: 100px;
+  width: 83px;
+  height: 52px;
+  padding: 0;
   color: #e0d8f0;
   align-items: center;
   display: flex;
