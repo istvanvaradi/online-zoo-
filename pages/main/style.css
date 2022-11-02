@@ -225,8 +225,8 @@ h1 .yellow {
 /*pickandfeed*/
 
 #pickandfeed {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   width: 1600px;
   background: linear-gradient(
       315.75deg,
@@ -257,7 +257,7 @@ h1 .yellow {
   padding: auto;
   height: 800px;
   background: rgba(253, 253, 255, 0.52);
-  margin: 200px 70px 200px 70px;
+  margin: 100px 70px 100px 70px;
   line-height: 120%;
   text-align: center;
   padding-top: 50px;
@@ -281,8 +281,11 @@ h1 .yellow {
 #pickandfeed .innerBox {
   font-family: 'Roboto', sans-serif;
   line-height: 40px;
+  height: 900px;
 }
-
+#howit h2 {
+  margin-top: 100px;
+}
 .howtoCards {
   display: flex;
   flex-direction: row;
@@ -343,6 +346,14 @@ h1 .yellow {
   flex-direction: column;
   text-align: center;
   align-items: center;
+}
+.testimonyCentered h2 {
+  margin-top: 150px;
+  margin-bottom: -50px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 130%;
 }
 #progressbar {
   height: 10px;
@@ -440,4 +451,13 @@ footer #bottomFooter {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.main-button:hover {
+  background-color: yellow;
+}
+
+a:hover {
+  text-decoration: underline coral;
+  color: #febdab;
 }
