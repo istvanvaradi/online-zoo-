@@ -410,6 +410,9 @@ footer .logo {
   justify-content: space-between;
   padding: 40px 200px 40px 200px;
 }
+footer .main-button {
+  margin-top: 0px;
+}
 footer a {
   color: #eaf7fe;
   text-decoration: none;
@@ -458,6 +461,7 @@ footer #social {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  margin-left: -36px;
 }
 
 footer #bottomFooter {
@@ -491,4 +495,18 @@ footer .footer-links :nth-child(1):hover {
 }
 .card:hover {
   background-color: grey;
+}
+.card .rectangle:hover {
+  transform: scale(1.5);
+}
+
+#leafy {
+  position: absolute;
+  right: 0px;
+  margin-top: 5%;
+  z-index: -1;
+}
+
+.arrows a:hover {
+  transform: scale(1.5);
 }
