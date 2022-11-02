@@ -482,6 +482,13 @@ a:hover {
   color: #febdab;
 }
 
+footer .footer-links :nth-child(1) {
+  text-decoration: underline coral;
+}
+footer .footer-links :nth-child(1):hover {
+  text-decoration: underline coral;
+  color: #f1f3f2;
+}
 .card:hover {
   background-color: grey;
 }
