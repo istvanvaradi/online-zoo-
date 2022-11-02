@@ -251,6 +251,10 @@ h1 .yellow {
       #eaf7fe 149.54%
     );
 }
+.innerBox a {
+  color: #000000;
+  text-decoration: underline orange;
+}
 #pickandfeed .innerBox {
   font-style: normal;
   text-align: center;
@@ -262,6 +266,7 @@ h1 .yellow {
   text-align: center;
   padding-top: 50px;
 }
+
 #pickandfeed .innerBox h3 {
   font-family: 'Roboto';
   font-style: normal;
@@ -281,7 +286,13 @@ h1 .yellow {
 #pickandfeed .innerBox {
   font-family: 'Roboto', sans-serif;
   line-height: 40px;
+  border-radius: 25px;
   height: 900px;
+  width: 79%;
+  margin: auto;
+  padding: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 #howit h2 {
   margin-top: 100px;
@@ -386,11 +397,11 @@ footer button {
 footer .logo {
   width: 83px;
   height: 52px;
-  padding: 0;
   color: #e0d8f0;
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .footer-up {
@@ -399,7 +410,11 @@ footer .logo {
   justify-content: space-between;
   padding: 40px 200px 40px 200px;
 }
-
+footer a {
+  color: #eaf7fe;
+  text-decoration: none;
+  margin-left: 30px;
+}
 #email {
   width: 228px;
   height: 42px;
@@ -439,7 +454,6 @@ footer .social-media {
 }
 
 footer #social {
-  margin-left: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -449,8 +463,12 @@ footer #social {
 footer #bottomFooter {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-end;
+}
+
+#bottomFooter .footer-links {
+  margin-right: 100px;
 }
 
 .main-button:hover {
