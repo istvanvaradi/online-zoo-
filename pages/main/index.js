@@ -1,1 +1,1 @@
-//alert('please wait till the end of Wednesday :)')
+alert('please wait till the end of Wednesday :)')
