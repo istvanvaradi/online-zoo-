@@ -17,7 +17,9 @@
         </h1>
       </div>
       <div class="nav-elements">
-        <a style="text-decoration: underline coral;" href="_">About</a>
+        <a style="text-decoration: underline coral;" href="../main/index.html">
+          About
+        </a>
         <a href="../donate/index.html">Map</a>
         <a href="">Zoos</a>
         <a href="">Contact us</a>
@@ -131,6 +133,8 @@
                 id="moneyinput"
                 type="number"
                 placeholder="Another amount"
+                pattern="\d*"
+                maxlength="4"
               />
               <i>$</i>
             </div>
@@ -141,6 +145,7 @@
                   id="contactChoice1"
                   name="contact"
                   value="Monthly"
+                  checked
                 />
                 <label for="contactChoice1">Monthly</label>
 
@@ -229,7 +234,7 @@
             </a>
           </div>
           <div class="footer-links">
-            <a href="">About</a>
+            <a href="../main/index.html">About</a>
             <a href="">Map</a>
             <a href="">Zoos</a>
             <a href="">Contact us</a>
