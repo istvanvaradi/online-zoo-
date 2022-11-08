@@ -156,14 +156,17 @@ h1 {
   margin-left: 10%;
   border-radius: 2px;
 }
+tbody {
+  width: 90%;
+}
 table {
   width: 100%;
 }
 
 table input[type='radio']:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
   position: relative;
   background-color: rgba(255, 238, 46, 1);
   content: '';
@@ -172,9 +175,9 @@ table input[type='radio']:after {
 }
 
 input[type='radio']:checked:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
   position: relative;
   background-color: #ffa500;
   content: '';
@@ -192,12 +195,13 @@ input[type='radio']:checked:after {
   margin-top: 10px;
   margin-left: 60px;
 }
-td label {
-  color: #fe9013;
+td label p {
+  color: rgba(64, 73, 80, 1);
+  font-weight: 400;
 }
 table label {
   position: absolute;
-  margin-left: -18px;
+  margin-left: -30px;
   margin-top: 10px;
 }
 .inputbuttons {
@@ -267,7 +271,7 @@ input::-webkit-inner-spin-button {
 /*footer*/
 footer {
   width: 1600px;
-  height: 600px;
+  padding-bottom: 60px;
   background: rgba(17, 17, 21, 1);
   color: #eaf7fe;
 }
