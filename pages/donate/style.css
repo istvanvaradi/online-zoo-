@@ -157,10 +157,11 @@ h1 {
   border-radius: 2px;
 }
 table {
-  display: flex;
+  width: 100%;
 }
-td input {
-  position: relative;
+
+td label {
+  color: #fe9013;
 }
 td input:after {
   display: block;
