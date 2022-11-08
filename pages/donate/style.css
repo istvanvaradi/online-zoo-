@@ -18,10 +18,10 @@ nav {
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: space-between;
+  padding-left: 12%;
 }
-
 nav a {
   color: white;
   text-decoration: none;
@@ -33,7 +33,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: -200px;
+  margin-left: 100px;
 }
 
 .logo {
@@ -115,40 +115,32 @@ h1 {
   margin-left: 12%;
   justify-content: space-evenly;
 }
-
-td {
+#inputbackground {
+  background-color: rgba(64, 73, 80, 1);
+  width: 80%;
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  border-radius: 2px;
 }
-.line td {
+
+td input {
   position: relative;
 }
-.line td:after {
-  content: '';
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  height: 1px;
+td input:after {
+  display: block;
+  content: ' ';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(0, -100%);
-  z-index: -1;
+  bottom: 6px;
+  background: rgb(95, 92, 92);
+  height: 2px;
+  width: 100%;
+  right: -12px;
 }
-.line td:last-child:after {
+td:last-child input:after {
   display: none;
 }
-
-/* .line td input[type='radio']:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: yellow;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-} */
 
 /*pickafriend*/
 
@@ -163,6 +155,7 @@ td {
   height: 54px;
   border: 1px solid #929699;
   border-radius: 2px;
+  margin-left: 250px;
 }
 
 #moneyin i {
@@ -181,8 +174,32 @@ input::-webkit-inner-spin-button {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.52);
   border-radius: 20px;
+  width: 76%;
+  margin: auto;
 }
 
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+#pickafriend p {
+  color: black;
+}
+#pickafriend #whitefornreason {
+  color: #ffffff;
+  width: 96%;
+  text-align: left;
+}
+
+.paymentbutton {
+  text-align: center;
+  width: 298px;
+  height: 54px;
+  background-color: #fe9013;
+  color: #ffffff;
+  border-radius: 25px;
+  border: 0px;
+}
 /*footer*/
 footer {
   width: 1600px;

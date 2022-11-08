@@ -38,7 +38,7 @@
           <h3>
             THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
           </h3>
-          <p>
+          <p id="whitefornreason">
             Even though the Zoo has been able to reopen, we are at a greatly
             reduced capacity with educational programs and public and private
             events cancelled or postponed for additional months. We need you now
@@ -67,60 +67,64 @@
                 <h4>4</h4>
                 <p>Panda diet for the day.</p>
               </div>
-              <img src="../../assets/x_icon.png" alt="" />
+              <img src="../../assets/x_icon.png" alt="x_icon" />
 
-              <img src="../../assets/panda_widget1.png" alt="" />
+              <img src="../../assets/panda_widget1.png" alt="panda widget" />
             </div>
-            <table>
-              <tbody>
-                <tr>
-                  <td>
-                    <label for="answer_5000">$5000</label>
-                  </td>
-                  <td>
-                    <label for="answer_2000">$2000</label>
-                  </td>
-                  <td>
-                    <label for="answer_1000">$1000</label>
-                  </td>
-                  <td>
-                    <label for="answer_500">$500</label>
-                  </td>
-                  <td>
-                    <label for="answer_250">$250</label>
-                  </td>
-                  <td>
-                    <label for="answer_100">$100</label>
-                  </td>
-                  <td>
-                    <label for="answer_50">$50</label>
-                  </td>
-                </tr>
-                <tr class="line">
-                  <td>
-                    <input name="answer" id="answer_5000" type="radio" />
-                  </td>
-                  <td>
-                    <input name="answer" id="answer_2000" type="radio" />
-                  </td>
-                  <td>
-                    <input name="answer" id="answer_1000" type="radio" />
-                  </td>
-                  <td>
-                    <input name="answer" id="answer_500" type="radio" />
-                  </td>
-                  <td>
-                    <input name="answer" id="answer_250" type="radio" />
-                  </td>
-                  <td>
-                    <input name="answer" id="answer_100" type="radio" />
-                  </td>
-                  <td>
-                    <input name="answer" id="answer_50" type="radio" />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+
+            <div id="inputbackground">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="answer_1">$5000</label>
+                    </td>
+
+                    <td>
+                      <label for="answer_2">$2000</label>
+                    </td>
+                    <td>
+                      <label for="answer_3">$1000</label>
+                    </td>
+                    <td>
+                      <label for="answer_4">$500</label>
+                    </td>
+                    <td>
+                      <label for="answer_5">$250</label>
+                    </td>
+                    <td>
+                      <label for="answer_6">$100</label>
+                    </td>
+                    <td>
+                      <label for="answer_7">$50</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input name="answer" id="answer_1" type="radio" />
+                    </td>
+                    <td>
+                      <input name="answer" id="answer_2" type="radio" />
+                    </td>
+                    <td>
+                      <input name="answer" id="answer_3" type="radio" />
+                    </td>
+                    <td>
+                      <input name="answer" id="answer_4" type="radio" />
+                    </td>
+                    <td>
+                      <input name="answer" id="answer_5" type="radio" />
+                    </td>
+                    <td>
+                      <input name="answer" id="answer_6" type="radio" />
+                    </td>
+                    <td>
+                      <input name="answer" id="answer_7" type="radio" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div id="moneyin">
               <input
                 id="moneyinput"
@@ -128,6 +132,16 @@
                 placeholder="Another amount"
               />
               <i>$</i>
+            </div>
+            <div>
+              <div class="paymentbottom">
+                <input type="radio" id="monthly" />
+                <label for="monthly">Monthly</label>
+                <input type="radio" id="once" />
+                <label for="monthly">Once</label>
+              </div>
+              <button class="main-button">Feed A Friend Now</button>
+              <p>Share with your friends on social networks</p>
             </div>
           </div>
         </div>
