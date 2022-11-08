@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0px;
   box-sizing: border-box;
 }
 
@@ -43,7 +43,10 @@ nav a {
   margin-bottom: 10px;
   padding: 10px;
 }
-
+.logo .bamboo {
+  margin-right: -10px;
+  z-index: 2;
+}
 h1 {
   font-size: 16px;
 }
@@ -70,7 +73,10 @@ h1 {
   margin: 0px;
 }
 #pickafriend {
+  position: relative;
   width: 1600px;
+  margin-bottom: 0px;
+  padding-bottom: 400px;
   background: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -101,13 +107,39 @@ h1 {
   width: 100%;
   color: rgba(255, 255, 255, 1);
 }
+#pickafriend h2 {
+  font-size: 48px;
+  line-height: 57px;
+}
 #pickafriend h4 {
   font-size: 70px;
 }
-#pickafriend p {
-  color: rgba(255, 255, 255, 1);
+
+#pickafriendAnd {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.52);
+  border-radius: 20px;
+  width: 76%;
+  margin: auto;
+  padding: 40px;
 }
 
+#pickafriendAnd p {
+  font-size: 29px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+  color: rgba(51, 59, 65, 1);
+}
+#pickafriendAnd h2 {
+  margin-bottom: 20px;
+}
+
+#pandalogo #xcon {
+  margin-right: 50px;
+  margin-left: 50px;
+}
 #texttoCenter {
   display: flex;
   flex-direction: column;
@@ -124,7 +156,9 @@ h1 {
   margin-left: 10%;
   border-radius: 2px;
 }
-
+table {
+  display: flex;
+}
 td input {
   position: relative;
 }
@@ -149,6 +183,7 @@ td:last-child input:after {
   align-self: left;
   margin-left: -80%;
 }
+
 #moneyin input {
   background-color: #ccc;
   width: 268px;
@@ -167,15 +202,6 @@ td:last-child input:after {
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-#pickafriendAnd {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.52);
-  border-radius: 20px;
-  width: 76%;
-  margin: auto;
 }
 
 .payment {
@@ -200,12 +226,17 @@ input::-webkit-inner-spin-button {
   border-radius: 25px;
   border: 0px;
 }
+#pickafriend .paymentbottom p {
+  font-size: 12px;
+}
+#midbutton {
+  margin-bottom: 50px;
+}
 /*footer*/
 footer {
   width: 1600px;
   height: 600px;
   background: rgba(17, 17, 21, 1);
-  margin-top: 200px;
   color: #eaf7fe;
 }
 footer button {

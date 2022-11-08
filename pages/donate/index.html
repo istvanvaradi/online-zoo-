@@ -67,7 +67,7 @@
                 <h4>4</h4>
                 <p>Panda diet for the day.</p>
               </div>
-              <img src="../../assets/x_icon.png" alt="x_icon" />
+              <img id="xcon" src="../../assets/x_icon.png" alt="x_icon" />
 
               <img src="../../assets/panda_widget1.png" alt="panda widget" />
             </div>
@@ -133,14 +133,27 @@
               />
               <i>$</i>
             </div>
-            <div>
-              <div class="paymentbottom">
-                <input type="radio" id="monthly" />
-                <label for="monthly">Monthly</label>
-                <input type="radio" id="once" />
-                <label for="monthly">Once</label>
-              </div>
-              <button class="main-button">Feed A Friend Now</button>
+            <div class="paymentbottom">
+              <form>
+                <input
+                  type="radio"
+                  id="contactChoice1"
+                  name="contact"
+                  value="Monthly"
+                />
+                <label for="contactChoice1">Monthly</label>
+
+                <input
+                  type="radio"
+                  id="contactChoice2"
+                  name="contact"
+                  value="Once"
+                />
+                <label for="contactChoice2">Once</label>
+              </form>
+              <button id="midbutton" class="main-button">
+                Feed A Friend Now
+              </button>
               <p>Share with your friends on social networks</p>
             </div>
           </div>
