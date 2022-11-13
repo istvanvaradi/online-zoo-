@@ -427,3 +427,7 @@ footer .footer-links :nth-child(1):hover {
 footer form button:hover {
   background-color: #929699;
 }
+
+button:hover {
+  cursor: pointer;
+}
