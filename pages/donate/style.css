@@ -12,6 +12,10 @@ h2 {
   color: rgba(254, 144, 19, 1);
 }
 /*nav*/
+#floatright {
+  float: right;
+  margin-left: 400px;
+}
 nav {
   width: 1600px;
   background-color: #000000;
@@ -19,7 +23,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: space-between;
+  align-items: center;
   padding-left: 12%;
 }
 nav a {
@@ -33,7 +37,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 .logo {
@@ -159,8 +163,18 @@ h1 {
 tbody {
   width: 90%;
 }
+
 table {
   width: 100%;
+}
+
+.circlething {
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  position: absolute;
+  margin-left: 56px;
+  margin-top: 1px;
 }
 
 table input[type='radio']:after {
@@ -173,7 +187,14 @@ table input[type='radio']:after {
   display: inline-block;
   visibility: visible;
 }
-
+td {
+  border: transparent solid 1px;
+  width: 30px;
+  border-radius: 50%;
+}
+td:hover {
+  cursor: pointer;
+}
 input[type='radio']:checked:after {
   width: 12px;
   height: 12px;
@@ -186,10 +207,12 @@ input[type='radio']:checked:after {
   border: 2px solid white;
 }
 
+input[type='radio']:hover {
+  cursor: pointer;
+}
 #line {
   width: 49%;
   background-color: rgba(114, 130, 142, 1);
-
   height: 2px;
   position: absolute;
   margin-top: 10px;
@@ -370,6 +393,10 @@ a:hover {
   text-decoration: underline coral;
   color: #febdab;
 }
+.logolink:hover {
+  text-decoration: none;
+  color: #eaf7fe;
+}
 
 footer .footer-links :nth-child(1) {
   text-decoration: underline coral;
@@ -395,4 +422,8 @@ footer .footer-links :nth-child(1):hover {
   border: 0px;
   margin-top: 100px;
   text-transform: uppercase;
+}
+
+footer form button:hover {
+  background-color: #929699;
 }

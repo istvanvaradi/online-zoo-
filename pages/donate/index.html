@@ -4,32 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Donate</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
     <nav>
       <div class="logo">
-        <h1 onClick="window.location.reload();">
-          Petstory
-          <br />
-          <img class="bamboo" src="../../assets/bamboo.png" width="10px" />
-          Online
-        </h1>
+        <a class="logolink" href="../main/index.html">
+          <h1 onClick="window.location.reload();">
+            Petstory
+            <br />
+            <img class="bamboo" src="../../assets/bamboo.png" width="10px" />
+            Online
+          </h1>
+        </a>
       </div>
       <div class="nav-elements">
-        <a style="text-decoration: underline coral;" href="../main/index.html">
+        <a>
           About
         </a>
         <a href="../donate/index.html">Map</a>
         <a href="">Zoos</a>
-        <a href="">Contact us</a>
-        <a
-          target="”_blank”"
-          href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=126%3A0"
-        >
-          Designed by ©
+
+        <a style="text-decoration: underline coral;" href="../main/index.html">
+          Donate
         </a>
+        <a href="">Contact us</a>
       </div>
+      <a
+        id="floatright"
+        target="”_blank”"
+        href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=126%3A0"
+      >
+        Designed by ©
+      </a>
     </nav>
   </head>
   <body>
@@ -79,6 +86,7 @@
                 <tbody>
                   <tr class="inputbuttons">
                     <div id="line"></div>
+
                     <td>
                       <input name="answer" id="answer_1" type="radio" />
                     </td>
@@ -153,7 +161,6 @@
                   id="contactChoice1"
                   name="contact"
                   value="Monthly"
-                  checked
                 />
                 <label for="contactChoice1">Monthly</label>
 
@@ -162,6 +169,7 @@
                   id="contactChoice2"
                   name="contact"
                   value="Once"
+                  checked
                 />
                 <label for="contactChoice2">Once</label>
               </form>
@@ -175,14 +183,20 @@
       </section>
       <footer>
         <div class="footer-up">
-          <div class="logo">
-            <p onClick="window.location.reload();">
-              Petstory
-              <br />
-              <img class="bamboo" src="../../assets/bamboo.png" width="10px" />
-              Online
-            </p>
-          </div>
+          <a href="../main/index.html" style="text-decoration: none;">
+            <div class="logo">
+              <p onClick="window.location.reload();">
+                Petstory
+                <br />
+                <img
+                  class="bamboo"
+                  src="../../assets/bamboo.png"
+                  width="10px"
+                />
+                Online
+              </p>
+            </div>
+          </a>
           <div>
             <h2>Subscribe to our news</h2>
             <form action="">
@@ -196,7 +210,9 @@
             </form>
           </div>
         </div>
-        <button class="main-button">DONATE FOR VOLUNTEERS</button>
+        <a href="../donate/index.html">
+          <button class="main-button">DONATE FOR VOLUNTEERS</button>
+        </a>
         <div id="bottomFooter">
           <div id="social">
             <a href="https://www.facebook.com/">
