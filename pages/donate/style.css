@@ -431,3 +431,6 @@ footer form button:hover {
 button:hover {
   cursor: pointer;
 }
+
+@media screen and(max-width:1000px) {
+}

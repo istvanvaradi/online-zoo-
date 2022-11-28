@@ -8,6 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
+
 h2 {
   font-weight: 100;
 }
@@ -177,6 +178,8 @@ h1 .yellow {
   border-radius: 1%;
   margin-top: 15px;
   margin-right: 25px;
+  width: 365px;
+  height: 366px;
 }
 
 .card .rectangle {
@@ -496,9 +499,6 @@ footer .footer-links :nth-child(1):hover {
 .card:hover {
   background-color: grey;
 }
-.card .rectangle:hover {
-  transform: scale(1.5);
-}
 
 #leafy {
   position: absolute;
@@ -513,4 +513,89 @@ footer .footer-links :nth-child(1):hover {
 
 #progressbar .fill:hover {
   width: 50%;
+}
+
+/* 1000 px media query*/
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  .body {
+    width: 100%;
+  }
+  #behind {
+    width: 100%;
+  }
+
+  .flower {
+    display: none;
+  }
+  #cards {
+    flex-wrap: wrap;
+    width: 1000px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 34.333333%;
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+  }
+  nav {
+    width: 100vw;
+  }
+  footer {
+    width: 100vw;
+  }
+  .card {
+    border: 1px solid #fe9013;
+    border-radius: 1%;
+    margin-top: 15px;
+    margin-right: 25px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-1,
+  .card-0,
+  .card-2 {
+    border: 1px solid #fe9013;
+    border-radius: 1%;
+    margin-top: 15px;
+    margin-right: 25px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 300px;
+  }
+
+  #cards .rectangle {
+    width: 250px;
+    height: 250px;
+  }
+  .arrows {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    order: 1;
+  }
+  main {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #pickandfeed {
+    width: 100%;
+    display: flex;
+  }
+
+  #testimpnySection {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  #testimonials {
+    margin-left: 100px;
+  }
+  #testimonials .testimony:last-child {
+    display: none;
+  }
 }
