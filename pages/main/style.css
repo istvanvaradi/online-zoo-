@@ -698,7 +698,7 @@ footer .footer-links :nth-child(1):hover {
   }
 
   #hero button {
-    margin-left: -239%;
+        margin-left: -169%;
   }
 
   main {
@@ -754,7 +754,7 @@ footer .footer-links :nth-child(1):hover {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    height: 177vh;
+    height: 137vh;
     overflow: hidden;
     flex-basis: 47%;
     margin-bottom: 10%;
@@ -870,4 +870,6 @@ footer .footer-links :nth-child(1):hover {
   footer button {
     margin-left: 10px;
   }
+@media screen and (min-width:320px) {
+  
 }
