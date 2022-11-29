@@ -733,9 +733,6 @@ footer .footer-links :nth-child(1):hover {
     margin-left: 27%;
   }
 
-  .arrows {
-    width: 100vw;
-  }
   #pickandfeed {
     width: auto;
   }
@@ -744,10 +741,10 @@ footer .footer-links :nth-child(1):hover {
   }
 
   #cards {
-    width: 100vw;
+    width: 99vw;
     display: flex;
     flex-direction: row;
-    height: 137vh;
+    height: 180vh;
     overflow: hidden;
     flex-basis: 47%;
     margin-bottom: 10%;
@@ -775,6 +772,9 @@ footer .footer-links :nth-child(1):hover {
     flex-direction: row;
     justify-content: center;
   }
+  .arrow {
+    margin: 20px;
+  }
 
   #card-section button {
     background-color: #fe9013;
@@ -783,13 +783,7 @@ footer .footer-links :nth-child(1):hover {
     margin-left: 30%;
     margin-bottom: 10%;
   }
-  .arrows {
-    position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    width: 40vw;
-    order: 1;
-  }
+
   #pickandfeed .innerBox {
     width: 100%;
   }
