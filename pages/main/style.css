@@ -7,10 +7,14 @@
   display: none;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   min-height: 100%;
+  padding: 0;
 }
 #hamburger div {
   width: 35px;
@@ -74,6 +78,7 @@ header {
   width: 100%;
   height: 780px;
   background-image: url(../../assets/GiantPanda.png);
+  background-position: cover;
 }
 #hero {
   background: #fe9013;
@@ -97,10 +102,10 @@ header {
   text-transform: uppercase;
 }
 h1 {
-  width: 500px;
+  width: 31.25rem;
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 106.496px;
+  font-size: 10vw;
   line-height: 75%;
   text-align: center;
   text-transform: uppercase;
@@ -582,11 +587,18 @@ footer .footer-links :nth-child(1):hover {
     width: 250px;
     height: 250px;
   }
+  #card-section button {
+    background-color: #fe9013;
+    align-items: center;
+    margin-top: 11%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+  }
   .arrows {
     position: absolute;
     display: flex;
-    justify-content: center;
-    width: 100vw;
+    justify-content: space-evenly;
+    width: 40vw;
     order: 1;
   }
   main {
@@ -658,18 +670,38 @@ footer .footer-links :nth-child(1):hover {
     width: 100vw;
   }
 
+  #hero {
+    display: flex;
+    justify-self: flex-end;
+    margin-right: 120px;
+    width: 400px;
+    height: 400px;
+  }
+
+  h1 {
+    width: 15rem;
+    margin-top: -100px;
+    font-size: 10vw;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+
+#hero button{
+  margin-left: -159%;
+}
+  }
   main {
     width: 100%;
   }
   header {
-    width: 100vw;
+    width: 100%;
   }
 
   nav {
     width: 100%;
     display: flex;
     align-content: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -677,12 +709,10 @@ footer .footer-links :nth-child(1):hover {
     display: none;
   }
 
-  #hero {
-    width: auto;
-  }
-
   #hamburger {
     visibility: visible;
+    align-self: center;
+    padding-left: 55%;
   }
   .old-man {
     display: none;
@@ -693,6 +723,11 @@ footer .footer-links :nth-child(1):hover {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  .flower {
+    width: 25%;
   }
   #testimpnySection button {
     margin-left: 27%;
@@ -716,7 +751,6 @@ footer .footer-links :nth-child(1):hover {
     overflow: hidden;
     flex-basis: 47%;
     margin-bottom: 10%;
-    padding-left: 5%;
   }
 
   .card .rectangle {
@@ -725,6 +759,10 @@ footer .footer-links :nth-child(1):hover {
   .card {
     width: 45%;
     margin-bottom: 20%;
+    margin-left: 1%;
+  }
+  #card-section {
+    align-self: center;
   }
 
   .rectangle {
@@ -745,7 +783,13 @@ footer .footer-links :nth-child(1):hover {
     margin-left: 30%;
     margin-bottom: 10%;
   }
-
+  .arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    order: 1;
+  }
   #pickandfeed .innerBox {
     width: 100%;
   }
@@ -773,6 +817,9 @@ footer .footer-links :nth-child(1):hover {
     margin-left: 25px;
   }
 
+  .behind-text {
+    width: 70%;
+  }
   #testimonials {
     display: flex;
     flex-direction: column;
@@ -806,11 +853,24 @@ footer .footer-links :nth-child(1):hover {
   #social {
     position: absolute;
     right: 0;
-    margin-left: 200px;
     margin-bottom: 40vh;
   }
   footer {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 79vh;
+  }
+
+  header {
+    overflow: hidden;
+    background-image: url(../../assets/GiantPanda.png);
+  }
+
+  footer .logo {
+    float: left;
+    margin-left: -55%;
+  }
+  footer button {
+    margin-left: 10px;
   }
 }
