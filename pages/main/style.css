@@ -3,10 +3,24 @@
   box-sizing: border-box;
 }
 
+#greenarrow {
+  display: none;
+}
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  min-height: 100%;
+}
+#hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+#hamburger {
+  visibility: hidden;
 }
 
 h2 {
@@ -548,8 +562,8 @@ footer .footer-links :nth-child(1):hover {
     border-radius: 1%;
     margin-top: 15px;
     margin-right: 25px;
-    width: 250px;
-    height: 250px;
+    width: 25%;
+    height: 25%;
   }
 
   .card-1,
@@ -587,8 +601,8 @@ footer .footer-links :nth-child(1):hover {
 
   #testimpnySection {
     width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%px;
+    padding-right: 10%;
     flex-wrap: wrap;
     overflow: hidden;
   }
@@ -597,5 +611,206 @@ footer .footer-links :nth-child(1):hover {
   }
   #testimonials .testimony:last-child {
     display: none;
+  }
+
+  #testimpnySection button {
+    margin-left: 10%;
+    border-radius: 4px;
+    font-weight: 200;
+    line-height: 10px;
+  }
+
+  footer {
+    height: 500px;
+  }
+  footer .main-button {
+    margin-left: 50px;
+    border-radius: 12.5px;
+  }
+
+  .footer-up {
+    padding-left: 40px;
+    overflow: hidden;
+  }
+
+  footer .log {
+    justify-self: flex-start;
+  }
+
+  #behind {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .old-man {
+    margin-left: 3%;
+    width: 45%;
+  }
+  .behind-text {
+    margin-left: 3%;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  body {
+    width: 100vw;
+  }
+
+  main {
+    width: 100%;
+  }
+  header {
+    width: 100vw;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  #hero {
+    width: auto;
+  }
+
+  #hamburger {
+    visibility: visible;
+  }
+  .old-man {
+    display: none;
+  }
+  #behind {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+  #testimpnySection button {
+    margin-left: 27%;
+  }
+
+  .arrows {
+    width: 100vw;
+  }
+  #pickandfeed {
+    width: auto;
+  }
+  footer {
+    width: 100vw;
+  }
+
+  #cards {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: 137vh;
+    overflow: hidden;
+    flex-basis: 47%;
+    margin-bottom: 10%;
+    padding-left: 5%;
+  }
+
+  .card .rectangle {
+    width: 100%;
+  }
+  .card {
+    width: 45%;
+    margin-bottom: 20%;
+  }
+
+  .rectangle {
+    width: 25vw;
+  }
+
+  .arrows {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #card-section button {
+    background-color: #fe9013;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 30%;
+    margin-bottom: 10%;
+  }
+
+  #pickandfeed .innerBox {
+    width: 100%;
+  }
+  .howtoCards .howtoCard {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: start;
+    margin: -1px;
+  }
+  .pazArrow {
+    display: none;
+  }
+  #greenarrow {
+    display: inline;
+    padding: 0px;
+    margin-left: -5%;
+    margin-top: -30%;
+  }
+  #pickandfeed button {
+    margin-top: 50px;
+  }
+  .howtoCards {
+    margin-left: 25px;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #testimonials .testimony {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 80%;
+    height: 12vh;
+    overflow-y: hidden;
+    margin-left: 10%;
+  }
+  #testimonials .testimony p {
+    width: 100%;
+    height: 25%;
+  }
+  #testimpnySection {
+    overflow-x: hidden;
+    width: auto;
+  }
+
+  .footer-up h2,
+  form {
+    visibility: hidden;
+  }
+  .iconPair div {
+    visibility: hidden;
+  }
+  #social {
+    position: absolute;
+    right: 0;
+    margin-left: 200px;
+    margin-bottom: 40vh;
+  }
+  footer {
+    width: 100%;
+    overflow-x: hidden;
   }
 }
