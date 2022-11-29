@@ -684,12 +684,12 @@ footer .footer-links :nth-child(1):hover {
     font-size: 10vw;
     line-height: 1;
     letter-spacing: 4px;
-}
-
-#hero button{
-  margin-left: -159%;
-}
   }
+
+  #hero button {
+    margin-left: -159%;
+  }
+
   main {
     width: 100%;
   }
