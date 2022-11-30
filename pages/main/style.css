@@ -288,7 +288,9 @@ h1 .yellow {
   text-align: center;
   padding-top: 50px;
 }
-
+.hidableP {
+  display: none;
+}
 #pickandfeed .innerBox h3 {
   font-family: 'Roboto';
   font-style: normal;
@@ -698,7 +700,7 @@ footer .footer-links :nth-child(1):hover {
   }
 
   #hero button {
-        margin-left: -169%;
+    margin-left: -169%;
   }
 
   main {
@@ -735,6 +737,10 @@ footer .footer-links :nth-child(1):hover {
     width: 100vw;
     margin-top: 5%;
     margin-bottom: 15%;
+  }
+
+  .behind-text {
+    padding-left: 4%;
   }
   .flower {
     width: 25%;
@@ -870,6 +876,297 @@ footer .footer-links :nth-child(1):hover {
   footer button {
     margin-left: 10px;
   }
-@media screen and (min-width:320px) {
-  
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  body {
+    width: 100vw;
+  }
+  header {
+    overflow: hidden;
+    background-image: url(../../assets/GiantPanda.png);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    height: 500px;
+    width: 100wv;
+  }
+
+  #hero {
+    display: flex;
+    justify-self: flex-end;
+    margin-right: 74px;
+    width: 250px;
+    height: 250px;
+    margin-top: 4%;
+  }
+  .hero-text {
+    margin-left: 170px;
+  }
+  h1 {
+    width: 9rem;
+    margin-top: -184px;
+    margin-left: -144px;
+    font-size: 10vw;
+    line-height: 41px;
+  }
+
+  #hero button {
+    margin-left: -36%;
+    bottom: 0;
+    top: 429;
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  #hamburger {
+    visibility: visible;
+    align-self: center;
+
+    margin-left: 300px;
+  }
+  .old-man {
+    display: none;
+  }
+  #behind {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+  .behind-text {
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .behind-text h2 {
+    font-size: 2rem;
+  }
+  .flower {
+    width: 25%;
+    overflow-x: hidden;
+  }
+  #leafy {
+    width: 20%;
+    margin-top: 70px;
+  }
+  #testimpnySection button {
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+
+  #cards {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  .card .rectangle {
+    width: 100%;
+  }
+  .card {
+    width: 95%;
+    margin-bottom: 20%;
+    margin-left: 3%;
+    display: block;
+  }
+  #card-section {
+    align-self: center;
+  }
+
+  .rectangle {
+    width: 25vw;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  #card-section button {
+    background-color: #fe9013;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 3%;
+    margin-bottom: 10%;
+  }
+
+  #pickandfeed .innerBox h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 12px;
+    color: #fe9013;
+  }
+  .howtoCards {
+    display: flex;
+    flex-direction: column;
+  }
+  .hideableP {
+    display: none;
+  }
+  #pickandfeed .innerBox .bigP {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 100%;
+  }
+  #pickandfeed .innerBox {
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+    border-radius: 25px;
+    height: auto;
+    width: 89%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #pickandfeed {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .howtoCards .howtoCard {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: start;
+    margin: -1px;
+    height: 99%;
+  }
+
+  .innerBox h3 {
+    font-size: 10px;
+    margin-bottom: 50px;
+  }
+  .pazArrow {
+    display: none;
+  }
+  #greenarrow {
+    display: flex;
+    margin-left: 169px;
+    transform: rotate(90deg);
+  }
+  #pickandfeed button {
+    margin-bottom: 50px;
+    width: 90%;
+  }
+  .howtoCards {
+    margin-left: 25px;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 16%;
+  }
+  #testimonials .testimony {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
+    height: 15vh;
+    overflow-y: hidden;
+    margin-left: 4%;
+  }
+  #testimonials .testimony p {
+    width: 100%;
+    height: 25%;
+  }
+
+  #testimpnySection .testimonyCentered h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgba(51, 59, 65, 1);
+  }
+  #testimpnySection {
+    margin-bottom: 50px;
+  }
+  #progressbar {
+    display: none;
+  }
+
+  .footer-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding: 40px 200px 40px 200px; */
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .footer-up form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+  }
+
+  footer #social .iconPair div {
+    display: none;
+  }
+  footer #social {
+    flex-direction: row;
+    position: absolute;
+    margin-bottom: 140%;
+  }
+
+  footer #bottomFooter {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer #bottomFooter p {
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer button {
+    margin-left: 0;
+  }
+
+  footer .logo {
+    border: none;
+    flex-direction: row;
+  }
+  footer .logo p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
