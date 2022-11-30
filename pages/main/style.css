@@ -678,7 +678,9 @@ footer .footer-links :nth-child(1):hover {
     background-repeat: no-repeat;
     background-size: 100% 80%;
   }
-
+  #bottomFooter .footer-links {
+    margin-right: 20px;
+  }
   #hero {
     display: flex;
     justify-self: flex-end;
@@ -861,12 +863,14 @@ footer .footer-links :nth-child(1):hover {
   #social {
     position: absolute;
     right: 0;
-    margin-bottom: 40vh;
+    left: 544px;
+    margin-bottom: 30vh;
+    overflow: hidden;
   }
   footer {
     width: 100%;
     overflow: hidden;
-    height: 79vh;
+    height: 89vh;
   }
 
   footer .logo {
@@ -1143,7 +1147,7 @@ footer .footer-links :nth-child(1):hover {
   footer #social {
     flex-direction: row;
     position: absolute;
-    margin-bottom: 755px;
+    margin-bottom: 750px;
   }
 
   footer #bottomFooter {

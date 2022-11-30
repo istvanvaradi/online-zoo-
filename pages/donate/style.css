@@ -12,12 +12,14 @@ h2 {
   color: rgba(254, 144, 19, 1);
 }
 /*nav*/
+
 #floatright {
   float: right;
-  margin-left: 400px;
+  margin-left: 50px;
 }
+
 nav {
-  width: 1600px;
+  width: 100vw;
   background-color: #000000;
   color: white;
   display: flex;
@@ -40,6 +42,17 @@ nav a {
   margin-left: 200px;
 }
 
+#hamburger div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+#hamburger {
+  visibility: hidden;
+}
+
 .logo {
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -59,7 +72,7 @@ h1 {
 /*panda pic section*/
 #pandapic {
   height: 390px;
-  width: 1600px;
+  width: 100vw;
   background-image: url('../../assets/GiantPanda.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +91,7 @@ h1 {
 }
 #pickafriend {
   position: relative;
-  width: 1600px;
+  width: 100vw;
   margin-bottom: 0px;
   padding-bottom: 400px;
   background: linear-gradient(
@@ -153,7 +166,7 @@ h1 {
 }
 #inputbackground {
   background-color: rgba(64, 73, 80, 1);
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -211,7 +224,7 @@ input[type='radio']:hover {
   cursor: pointer;
 }
 #line {
-  width: 49%;
+  width: 63%;
   background-color: rgba(114, 130, 142, 1);
   height: 2px;
   position: absolute;
@@ -293,7 +306,7 @@ input::-webkit-inner-spin-button {
 }
 /*footer*/
 footer {
-  width: 1600px;
+  width: 100vw;
   padding-bottom: 60px;
   background: rgba(17, 17, 21, 1);
   color: #eaf7fe;
@@ -412,8 +425,7 @@ footer .footer-links :nth-child(1):hover {
   margin-top: 5%;
   z-index: -1;
 }
-
-.main-button {
+:-moz-any() .main-button {
   width: 298px;
   height: 54px;
   background-color: #fe9013;
@@ -432,5 +444,282 @@ button:hover {
   cursor: pointer;
 }
 
-@media screen and(max-width:1000px) {
+@media screen and (max-width: 1000px) {
+  body {
+    width: 100vw;
+  }
+
+  nav {
+    width: 100vws;
+  }
+
+  #pickafriend {
+    padding-bottom: 5%;
+  }
+  #pickafriendAnd {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  #moneyin input {
+    margin-left: 10%;
+  }
+
+  footer {
+    height: 500px;
+  }
+  footer .main-button {
+    margin-left: 50px;
+    border-radius: 12.5px;
+  }
+
+  .footer-up {
+    padding-left: 40px;
+    overflow: hidden;
+  }
+
+  footer .log {
+    justify-self: flex-start;
+  }
+
+  #line {
+    width: 63%;
+    background-color: rgba(114, 130, 142, 1);
+    height: 2px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 6%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  nav .nav-elements,
+  #floatright {
+    display: none;
+  }
+
+  #hamburger {
+    visibility: visible;
+    align-self: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  #pickafriend h2 {
+    font-size: 6vw;
+    line-height: 57px;
+  }
+
+  #inputbackground {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    overflow: hidden;
+    height: 79vh;
+  }
+
+  footer .logo {
+    float: left;
+    margin-left: -55%;
+  }
+  footer button {
+    margin-left: 10px;
+  }
+  .footer-up h2,
+  form {
+    visibility: hidden;
+  }
+  .iconPair div {
+    visibility: hidden;
+  }
+  #social {
+    position: absolute;
+    right: 0;
+    left: 594px;
+    margin-bottom: 32vh;
+    overflow: hidden;
+  }
+  #bottomFooter .footer-links {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav .nav-elements,
+  #floatright {
+    display: none;
+  }
+
+  #hamburger {
+    visibility: visible;
+    align-self: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  #pickafriend h2 {
+    font-size: 6vw;
+    line-height: 57px;
+  }
+
+  #inputbackground {
+    width: 100%;
+  }
+  .footer-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 158px;
+    align-content: space-around;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-up form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  footer #social .iconPair div {
+    display: none;
+  }
+  footer #social {
+    flex-direction: row;
+    position: absolute;
+    margin-bottom: 775px;
+  }
+
+  footer #bottomFooter {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer #bottomFooter p {
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer button {
+    margin-left: 0;
+  }
+
+  footer .logo {
+    border: none;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  footer .logo p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: -22px;
+  }
+
+  footer .logo h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  #email {
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+
+  #bottomFooter .footer-links {
+    margin-right: 4px;
+    margin-top: 10px;
+    margin-left: 2px;
+  }
+
+  #pandalogo img {
+    width: 50vw;
+  }
+
+  #pandalogo div {
+    width: 30vw;
+  }
+  #pandalogo p {
+    font-size: 10px;
+  }
+  #pandalogo h4 {
+    font-size: 20px;
+  }
+  #pickafriendAnd {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #pickafriendAnd div {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #pickafriendAnd p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #pickafriendAnd #pandalog p {
+    width: 100%;
+  }
+
+  #randiv {
+    width: 100%;
+    padding: 0;
+    margin-left: 5%;
+  }
+  #pandalogo #xcon {
+    margin: 0;
+    width: 10px;
+  }
+
+  #moneyin input {
+    width: 49vw;
+  }
+  #moneyin {
+  }
+
+  footer .main-button {
+    margin-left: 0;
+  }
+  .main-button {
+    width: 82%;
+  }
+  footer {
+    height: auto;
+  }
+
+  #line {
+    width: 90%;
+  }
 }
